@@ -1,24 +1,32 @@
 // We use an "Immediate Function" to initialize the application to avoid leaving anything behind in the global scope
 (function () {
 
-    var homeTpl = Handlebars.compile($("#home-tpl").html());
-    var employeeListTpl = Handlebars.compile($("#employee-list-tpl").html());
+    HomeView.prototype.template = Handlebars.compile($("#home-tpl").html());
+    EmployeeListView.prototype.template = Handlebars.compile($("#employee-list-tpl").html());
+    EmployeeView.prototype.template = Handlebars.compile($("#employee-tpl").html());
 
     /* ---------------------------------- Local Variables ---------------------------------- */
     var service = new EmployeeService();
+    var slider = new PageSlider($('body'));
+
     service.initialize().done(function () {
-        renderHomeView();
+        router.addRoute('', function() {
+            slider.slidePage(new HomeView(service).render().$el);
+        });
+
+        router.addRoute('employees/:id', function(id) {
+            service.findById(parseInt(id)).done(function(employee) {
+                slider.slidePage(new EmployeeView(employee).render().$el);
+            });
+        });
+
+        router.start();
     });
 
     /* ---------------------------------- Local Functions ---------------------------------- */
-    function findByName() {
-        service.findByName($('.search-key').val()).done(function (employees) {
-            $('.content').html(employeeListTpl(employees));
-        });
-    }
-
+    
     StatusBar.overlaysWebView( false );
-    StatusBar.backgroundColorByHexString('#fff');
+    StatusBar.backgroundColorByHexString('#ffffff');
     StatusBar.styleDefault();
 
     document.addEventListener('deviceready', function() {
@@ -34,11 +42,5 @@
         }
         FastClick.attach(document.body);
     }, false);
-
-    function renderHomeView() {
-
-        $('body').html(homeTpl());
-        $('.search-key').on('keyup', findByName);
-    }
 
 }());
