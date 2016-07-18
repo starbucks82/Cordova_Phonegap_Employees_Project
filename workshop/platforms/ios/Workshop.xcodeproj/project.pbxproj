@@ -27,6 +27,11 @@
 		173FF823762243588EF1AF77 /* CDVContact.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD5875775A24072A6B0844E /* CDVContact.m */; };
 		92585A19008E41BC9FBA99A5 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4455C103D98416F9572E38B /* AddressBook.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		99104286DF5244F5BEEF1E8C /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038515491AB14F8EA58DAED2 /* AddressBookUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F1CF4D0563E44A598A9D00F5 /* UIImage+CropScaleOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D393F9D8F1C406AA5E656E0 /* UIImage+CropScaleOrientation.m */; };
+		7C15F3AD4CCE4469B8146E32 /* CDVCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 4000DF4F14F74670B0406B62 /* CDVCamera.m */; };
+		CA582CE760864C21BBCB61CA /* CDVJpegHeaderWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0451CEF538CC4F23AE52618F /* CDVJpegHeaderWriter.m */; };
+		1ADF2558C85D4F9A96E4A4B9 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD8A8470DE54536AF2D9EA8 /* ImageIO.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		4AB456A8F56349958703B02C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E262C76CD744219A2E62954 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +90,15 @@
 		FB502360A4CE491FA3FACAFD /* CDVContact.h */ = {isa = PBXFileReference; name = "CDVContact.h"; path = "cordova-plugin-contacts/CDVContact.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		B4455C103D98416F9572E38B /* AddressBook.framework */ = {isa = PBXFileReference; name = "AddressBook.framework"; path = "System/Library/Frameworks/AddressBook.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		038515491AB14F8EA58DAED2 /* AddressBookUI.framework */ = {isa = PBXFileReference; name = "AddressBookUI.framework"; path = "System/Library/Frameworks/AddressBookUI.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		1D393F9D8F1C406AA5E656E0 /* UIImage+CropScaleOrientation.m */ = {isa = PBXFileReference; name = "UIImage+CropScaleOrientation.m"; path = "cordova-plugin-camera/UIImage+CropScaleOrientation.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		4000DF4F14F74670B0406B62 /* CDVCamera.m */ = {isa = PBXFileReference; name = "CDVCamera.m"; path = "cordova-plugin-camera/CDVCamera.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		0451CEF538CC4F23AE52618F /* CDVJpegHeaderWriter.m */ = {isa = PBXFileReference; name = "CDVJpegHeaderWriter.m"; path = "cordova-plugin-camera/CDVJpegHeaderWriter.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		63083794DC224F2288666017 /* UIImage+CropScaleOrientation.h */ = {isa = PBXFileReference; name = "UIImage+CropScaleOrientation.h"; path = "cordova-plugin-camera/UIImage+CropScaleOrientation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		417883FE124F48F8896EDE0D /* CDVCamera.h */ = {isa = PBXFileReference; name = "CDVCamera.h"; path = "cordova-plugin-camera/CDVCamera.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B7C6D9390E8E4D309B94F9CB /* CDVJpegHeaderWriter.h */ = {isa = PBXFileReference; name = "CDVJpegHeaderWriter.h"; path = "cordova-plugin-camera/CDVJpegHeaderWriter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		40AF4ADE7DE94590A621E535 /* CDVExif.h */ = {isa = PBXFileReference; name = "CDVExif.h"; path = "cordova-plugin-camera/CDVExif.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3CD8A8470DE54536AF2D9EA8 /* ImageIO.framework */ = {isa = PBXFileReference; name = "ImageIO.framework"; path = "System/Library/Frameworks/ImageIO.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		6E262C76CD744219A2E62954 /* AVFoundation.framework */ = {isa = PBXFileReference; name = "AVFoundation.framework"; path = "System/Library/Frameworks/AVFoundation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +111,8 @@
 				72EF232916344CE4A5A9F3FC /* CoreLocation.framework in Frameworks */,
 				92585A19008E41BC9FBA99A5 /* AddressBook.framework in Frameworks */,
 				99104286DF5244F5BEEF1E8C /* AddressBookUI.framework in Frameworks */,
+				1ADF2558C85D4F9A96E4A4B9 /* ImageIO.framework in Frameworks */,
+				4AB456A8F56349958703B02C /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +187,8 @@
 				C657BA1867A0491988E644C8 /* CoreLocation.framework */,
 				B4455C103D98416F9572E38B /* AddressBook.framework */,
 				038515491AB14F8EA58DAED2 /* AddressBookUI.framework */,
+				3CD8A8470DE54536AF2D9EA8 /* ImageIO.framework */,
+				6E262C76CD744219A2E62954 /* AVFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -210,6 +228,13 @@
 				BDD5875775A24072A6B0844E /* CDVContact.m */,
 				31304150FA614EEAA27A1C7A /* CDVContacts.h */,
 				FB502360A4CE491FA3FACAFD /* CDVContact.h */,
+				1D393F9D8F1C406AA5E656E0 /* UIImage+CropScaleOrientation.m */,
+				4000DF4F14F74670B0406B62 /* CDVCamera.m */,
+				0451CEF538CC4F23AE52618F /* CDVJpegHeaderWriter.m */,
+				63083794DC224F2288666017 /* UIImage+CropScaleOrientation.h */,
+				417883FE124F48F8896EDE0D /* CDVCamera.h */,
+				B7C6D9390E8E4D309B94F9CB /* CDVJpegHeaderWriter.h */,
+				40AF4ADE7DE94590A621E535 /* CDVExif.h */,
 			);
 			name = Plugins;
 			path = "Workshop/Plugins";
@@ -332,6 +357,9 @@
 				82F925866A9B451C8A04183F /* CDVLocation.m in Sources */,
 				21EDE72B4DA64D9BA355EC27 /* CDVContacts.m in Sources */,
 				173FF823762243588EF1AF77 /* CDVContact.m in Sources */,
+				F1CF4D0563E44A598A9D00F5 /* UIImage+CropScaleOrientation.m in Sources */,
+				7C15F3AD4CCE4469B8146E32 /* CDVCamera.m in Sources */,
+				CA582CE760864C21BBCB61CA /* CDVJpegHeaderWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

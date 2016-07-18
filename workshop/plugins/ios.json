@@ -27,6 +27,9 @@
         },
         "cordova-plugin-contacts": {
             "PACKAGE_NAME": "com.creativeguy.workshop"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.creativeguy.workshop"
         }
     },
     "dependent_plugins": {
